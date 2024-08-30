@@ -20,3 +20,10 @@
 # NOTICE 
 * In the market, there are many authorities i.e solana which uses a different approch to perform swaps. 
 * its fine, people can have different algorithms to make swaps(exchange) BUT the one method which i'm implementing is real OG's of web3. 
+
+
+# To RUN DEX
+Step 1 : `npx tsc -init`
+Step 2 : `tsc -b`
+Step 3 : `node dist/src/index.cjs` // Rename your index.js file to `.cjs` and before running your commands make sure to add `"type":"module"` in `tsconfig.json`.
+Step 4 : Hit the backend using postman api and your Decentralized Exchange will Work Accordingly!.
