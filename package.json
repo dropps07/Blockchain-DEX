@@ -1,0 +1,19 @@
+{
+  "name": "dex",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "* How can you build a dummy decentralised exchange with an automated market maker in Node.js\r  # Concepts covered \r  * AMM (Automated Market Makers) // Liquidity pool // constant product formula is as follows\r  x * y = k where the avraible X represents the quantity of the assest in liquidity pools where as y represents the quantity of the other assest \r  # for Example\r  * Lets say we have 20cr + 10 houses to sell and we combine it into our asset pool hence, making it a liquidity pool Acc to formula 10 * 200 = 200 \r  # We will be learning the funds provided or withdrawn exchanges Using AUTOMATED MARKET MAKER (AMM)\r  * If i have a liquidity pool fo 10 houses and 20cr and now someone buys one house i will havee 9 houses left i.e in accordance to the formula which is 9 * Y = 200\r  y= 22.22222 now if the first person have to buy he will pay 2.222 cr for the house.\r  * so the total liquidity = 20cr and 9 houses  \r  * now if another new person comes and buys a house we will have left 8houses, 8 * Y = 200 hence Y = 2.5 then he will pay 2.5cr.\r  * basically it runs on the formula price = total liquidity/no. of houses\r  * and for the second time it becomes new price(y) = total liquidity(k)/no. of houses(x)",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "express": "^4.19.2",
+    "node": "^22.7.0"
+  }
+}
