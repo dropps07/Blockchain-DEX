@@ -2,7 +2,7 @@
  * How can you build a dummy decentralised exchange with an automated market maker in Node.js
  # Concepts covered 
  * AMM (Automated Market Makers) // Liquidity pool // constant product formula is as follows
- x * y = k where the avraible X represents the quantity of the assest in liquidity pools where as y represents the quantity of the other assest 
+ x * y = k where the a varaible X represents the quantity of the assest in liquidity pools where as y represents the quantity of the other assest 
  # for Example
  * Lets say we have 20cr + 10 houses to sell and we combine it into our asset pool hence, making it a liquidity pool Acc to formula 10 * 200 = 200 
  # We will be learning the funds provided or withdrawn exchanges Using AUTOMATED MARKET MAKER (AMM)
@@ -15,8 +15,8 @@
 
 # Important discussions 
 * Blockchain vs DAGs 
-* Blockchain is very expensive whereas Directed acyclic graphs(DAGs) is faster and cheaper as well. But Blockchain Binance order is much realible when it comes to exchanging currency without any middleman i.e Banks
+* Blockchain is very expensive whereas Directed acyclic graphs(DAGs) is faster and cheaper as well. Blockchain's Binance order is much realible when it comes to exchanging currency without any middleman i.e Banks
 
 # NOTICE 
-* In the market, there are many authorities i.e solana which uses a different approch to perform swaps 
+* In the market, there are many authorities i.e solana which uses a different approch to perform swaps. 
 * its fine, people can have different algorithms to make swaps(exchange) BUT the one method which i'm implementing is real OG's of web3. 
