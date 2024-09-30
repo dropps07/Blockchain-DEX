@@ -1,7 +1,14 @@
 import express from 'express';
+import cors from 'cors';
+
 const app = express();
 const PORT = 3000;
+
+app.use(cors());
 app.use(express.json());
+app.use(express.static('public'));
+
+
 let ETH_BALANCE = 200; // as a liquidity provider always use usdc or usdt to avoid impermanent loss since eth is unstable,
 let USDC_BALANCE = 700000;
 
@@ -13,7 +20,7 @@ app.post("/buy-liquidity", (req, res) => {
     const paidAmount = updatedUsdcBalance - USDC_BALANCE;
     ETH_BALANCE = updatedEthQuantity;
     USDC_BALANCE = updatedUsdcBalance;
-
+    
     res.json({
         message:`YOU paid ${paidAmount} USDC for ${quantity} ETH`
     })
@@ -27,10 +34,11 @@ app.post("/sell-asset", (req, res) => {
     const paidAmount = updatedEthQuantity - ETH_BALANCE;
     ETH_BALANCE = updatedEthQuantity;
     USDC_BALANCE = updatedUsdcBalance;
-
+    
     res.json({
         message:`YOU got ${paidAmount} USDC for ${quantity} ETH`
     })
 })
-app.listen(3000);
-// hitting the backend using postman api
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
